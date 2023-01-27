@@ -18,7 +18,7 @@
 
     {% if status == '2' %}
     <div class="alert alert-danger" role="alert">
-        Faça login antes de tentar acessar o sistema
+        Faça login antes de tentar acessar o sistema!
       </div>
       
     {% endif %}
@@ -29,7 +29,7 @@
         </div>
 
         <div class="col-md">
-           <h1>Login</h1>
+           <h1> Login </h1>
            <hr>
 
            <form method="POST" action="{% url 'validar_login' %}">{% csrf_token %}
